@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template for Testing JS Code in Console</title>
+	<script type="text/javascript"></script>
+	<script>
+	"use strict";
+	function maxMinAverage(arr){
+		var arr = [1, 5, 10, -2];
+		var max = arr[0];
+		var min = arr[0];
+		var sum = arr[0];
+		for (var i = 0; i < arr.length; i++){
+			if (arr[i] > max) {
+				max = arr[i];
+			}
+			if (arr[i] < min) {
+				min = arr[i];
+			}
+			sum += arr[i];
+		}
+		console.log("Max value: " + max + " Min value: " + min);
+		console.log("Average: " + sum / arr.length);
+	}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
