@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template for Testing JS Code in Console</title>
+	<script type="text/javascript"></script>
+	<script>
+	"use strict";
+	function removeNegatives(arr){
+		var arr = [0, -1, 2, -3, 4, -5, 6];
+		var negativeCounter = 0;
+		for (var i = 0; i < arr.length; i++){
+			if (arr[i] < 0){
+				negativeCounter++;
+			}
+			else {
+				arr[i-negativeCounter] = arr[i];
+			}
+		}
+		while(negativeCounter--){
+			arr.pop();
+			}
+	return arr;		
+	}
+	
+	</script>
+</head>
+<body>
+
+</body>
+</html>
