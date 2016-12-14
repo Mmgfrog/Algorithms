@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template for Testing JS Code in Console</title>
+	<script type="text/javascript"></script>
+	<script>
+	"use strict";
+	function mutation(arr) {
+  		var one = arr[1].toLowerCase();
+  		var zero = arr[0].toLowerCase();
+  		for (var i=0; i<one.length; i++) {
+    		if (zero.indexOf(one[i]) < 0){
+      			return false;
+    		}
+  		}
+  		return true;
+	  }
+
+mutation(["hello", "hey"]);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
