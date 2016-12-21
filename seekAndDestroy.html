@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template for Testing JS Code in Console</title>
+	<script type="text/javascript"></script>
+	<script>
+	"use strict";
+	function destroyer(arr) {
+  		var a = arguments;
+  		for (var i = 1; i < a.length; i++){
+    		arr = arr.filter(function(val){
+     		return val !== a[i];
+    		});
+  		}
+  		return arr;
+	}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+
+	
+	</script>
+</head>
+<body>
+
+</body>
+</html>
